@@ -52,6 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="15dp"
+
         >
         <LinearLayout
             android:layout_width="wrap_content"
@@ -61,7 +62,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dosti Music Video"
-
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="22dp"
@@ -72,14 +72,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            android:layout_marginTop="10dp">
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_shuffle_24"
-                android:backgroundTint="@color/white"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="60dp">
+                android:backgroundTint="@color/gray"
+                android:tintMode="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="60dp"
+                app:fabCustomSize="35dp"
+                android:id="@+id/suffel">
 
             </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
@@ -87,10 +90,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_skip_previous_24"
-            android:backgroundTint="@color/white"
-            android:layout_marginHorizontal="90dp"
+            app:fabCustomSize="50dp"
+            android:backgroundTint="@color/gray"
+            android:tintMode="@color/white"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="60dp"
-            app:fabCustomSize="70dp"
+            android:id="@+id/skip"
             >
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
@@ -98,13 +103,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_play_arrow_24"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/red"
+            android:tintMode="@color/white"
+            app:fabCustomSize="60dp"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="60dp"
-
-            app:fabCustomSize="90dp"
+            android:layout_marginTop="54dp"
+            android:id="@+id/play"
             >
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_skip_next_24"
+                android:backgroundTint="@color/gray"
+                android:tintMode="@color/white"
+                app:fabCustomSize="50dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/skip_r">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_stop_24"
+                android:backgroundTint="@color/gray"
+                android:tintMode="@color/white"
+                app:fabCustomSize="35dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/stop"
+                >
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </LinearLayout>
 
 
 
